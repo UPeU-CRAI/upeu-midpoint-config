@@ -1,0 +1,12 @@
+# midPoint Studio / Maven
+target/
+*.log
+*.kdbx
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+
+# Sensitive files (precautionary)
+credentials.properties
