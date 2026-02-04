@@ -1,0 +1,128 @@
+<archetype xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000521" version="1" >
+    <_metadata id="9">
+        <storage>
+            <createTimestamp>2025-04-01T17:22:45.713Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2025-04-01T17:22:45.701Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Approval-related task</name>
+    <operationExecution id="12">
+        <recordType>simple</recordType>
+        <timestamp>2025-04-01T17:22:45.743Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ArchetypeType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000435</token>
+            </executionResult>
+            <objectName>Approval-related task</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <assignment id="3">
+        <_metadata id="10">
+            <storage>
+                <createTimestamp>2025-04-01T17:22:45.713Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2025-04-01T17:22:45.701Z</requestTimestamp>
+            </process>
+            <provenance>
+                <acquisition id="11">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2025-04-01T17:22:45.700Z</timestamp>
+                </acquisition>
+            </provenance>
+        </_metadata>
+        <identifier>holderType</identifier>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+        <assignmentRelation id="4">
+            <holderType>TaskType</holderType>
+        </assignmentRelation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2025-04-01T17:22:45.704Z</enableTimestamp>
+    </activation>
+    <inducement id="5">
+        <identifier>nameMapping</identifier>
+        <focusMappings>
+            <mapping id="7">
+                <strength>weak</strength>
+                <expression>
+                    <script>
+                        <code>
+                            return source.name
+                        </code>
+                    </script>
+                </expression>
+                <target>
+                    <path>name</path>
+                </target>
+            </mapping>
+        </focusMappings>
+    </inducement>
+    <inducement id="6">
+        <identifier>handlerMapping</identifier>
+        <focusMappings>
+            <mapping id="8">
+                <strength>weak</strength>
+                <expression>
+                    <value>http://midpoint.evolveum.com/xml/ns/public/workflow/operation-execution/handler-3</value>
+                </expression>
+                <target>
+                    <path>handlerUri</path>
+                </target>
+            </mapping>
+        </focusMappings>
+    </inducement>
+    <archetypePolicy>
+        <display>
+            <label>
+                <t:orig>Approval-related task</t:orig>
+                <t:norm>approvalrelated task</t:norm>
+                <t:translation>
+                    <t:key>ApprovalRelatedTask.label</t:key>
+                </t:translation>
+            </label>
+            <pluralLabel>
+                <t:orig>Approval-related tasks</t:orig>
+                <t:norm>approvalrelated tasks</t:norm>
+                <t:translation>
+                    <t:key>ApprovalRelatedTask.title</t:key>
+                </t:translation>
+            </pluralLabel>
+            <icon>
+                <cssClass>fe fe-case</cssClass>
+                <color>green</color>
+            </icon>
+        </display>
+        <adminGuiConfiguration>
+            <objectDetails>
+                <type>TaskType</type>
+                <panel id="1">
+                    <identifier>activity</identifier>
+                    <visibility>hidden</visibility>
+                </panel>
+                <panel id="2">
+                    <identifier>taskBasic</identifier>
+                    <default>true</default>
+                </panel>
+            </objectDetails>
+        </adminGuiConfiguration>
+    </archetypePolicy>
+</archetype>

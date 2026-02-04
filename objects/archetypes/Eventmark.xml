@@ -1,0 +1,93 @@
+<archetype xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000700" version="1" >
+    <_metadata id="4">
+        <storage>
+            <createTimestamp>2025-04-01T17:22:46.646Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2025-04-01T17:22:46.636Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Event mark</name>
+    <description>Denotes marks for audit and simulation events</description>
+    <operationExecution id="7">
+        <recordType>simple</recordType>
+        <timestamp>2025-04-01T17:22:46.663Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ArchetypeType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000541</token>
+            </executionResult>
+            <objectName>Event mark</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="5">
+            <storage>
+                <createTimestamp>2025-04-01T17:22:46.646Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2025-04-01T17:22:46.636Z</requestTimestamp>
+            </process>
+            <provenance>
+                <acquisition id="6">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2025-04-01T17:22:46.636Z</timestamp>
+                </acquisition>
+            </provenance>
+        </_metadata>
+        <identifier>holderType</identifier>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+        <assignmentRelation id="2">
+            <holderType>MarkType</holderType>
+        </assignmentRelation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2025-04-01T17:22:46.639Z</enableTimestamp>
+    </activation>
+    <archetypePolicy>
+        <display>
+            <label>
+                <t:orig>Event mark</t:orig>
+                <t:norm>event mark</t:norm>
+                <t:translation>
+                    <t:key>EventMark.label</t:key>
+                </t:translation>
+            </label>
+            <pluralLabel>
+                <t:orig>Event marks</t:orig>
+                <t:norm>event marks</t:norm>
+                <t:translation>
+                    <t:key>EventMarks.pluralLabel</t:key>
+                </t:translation>
+            </pluralLabel>
+            <icon>
+                <cssClass>fa fa-tag</cssClass>
+                <color>green</color>
+            </icon>
+        </display>
+        <adminGuiConfiguration>
+            <objectDetails>
+                <panel id="3">
+                    <identifier>objectOperationPolicyPanel</identifier>
+                    <visibility>hidden</visibility>
+                </panel>
+            </objectDetails>
+        </adminGuiConfiguration>
+    </archetypePolicy>
+    <archetypeType>structural</archetypeType>
+</archetype>

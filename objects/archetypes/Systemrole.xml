@@ -1,0 +1,89 @@
+<archetype xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000320" version="1" >
+    <_metadata id="3">
+        <storage>
+            <createTimestamp>2025-04-01T17:22:40.694Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2025-04-01T17:22:40.671Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>System role</name>
+    <description>
+        Archetype for roles that are essential from the system point
+        of view. Those are usually roles for the most powerful system
+        administrators, roles for internal usage in the system
+        (e.g. by tasks) and so on.
+    </description>
+    <operationExecution id="6">
+        <recordType>simple</recordType>
+        <timestamp>2025-04-01T17:22:40.735Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ArchetypeType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000025</token>
+            </executionResult>
+            <objectName>System role</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="4">
+            <storage>
+                <createTimestamp>2025-04-01T17:22:40.694Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2025-04-01T17:22:40.671Z</requestTimestamp>
+            </process>
+            <provenance>
+                <acquisition id="5">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2025-04-01T17:22:40.671Z</timestamp>
+                </acquisition>
+            </provenance>
+        </_metadata>
+        <identifier>holderType</identifier>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+        <assignmentRelation id="2">
+            <holderType>RoleType</holderType>
+        </assignmentRelation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2025-04-01T17:22:40.676Z</enableTimestamp>
+    </activation>
+    <archetypePolicy>
+        <display>
+            <label>
+                <t:orig>System role</t:orig>
+                <t:norm>system role</t:norm>
+                <t:translation>
+                    <t:key>systemRole.label</t:key>
+                </t:translation>
+            </label>
+            <pluralLabel>
+                <t:orig>System roles</t:orig>
+                <t:norm>system roles</t:norm>
+                <t:translation>
+                    <t:key>systemRoles.pluralLabel</t:key>
+                </t:translation>
+            </pluralLabel>
+            <icon>
+                <cssClass>fe fe-role</cssClass>
+                <color>red</color>
+            </icon>
+        </display>
+    </archetypePolicy>
+</archetype>

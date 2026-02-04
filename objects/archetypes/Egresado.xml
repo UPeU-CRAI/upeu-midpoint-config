@@ -1,0 +1,87 @@
+<archetype xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="6a74ca47-dad4-4199-8558-244f2c264c10" version="2" >
+    <_metadata id="3">
+        <storage>
+            <createTimestamp>2025-04-01T17:22:46.720Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2025-11-17T22:43:57.516Z</requestTimestamp>
+            <requestorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </requestorRef>
+        </process>
+    </_metadata>
+    <name>Egresado</name>
+    <description>Arquetipo para egresados de la UPeU. Representa identidades que han culminado un programa académico. Aplica plantillas y políticas propias del estado de egresado, con acceso limitado y controles de ciclo de vida posteriores a la graduación.</description>
+    <operationExecution id="7">
+        <recordType>simple</recordType>
+        <timestamp>2025-11-17T22:43:57.583Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ArchetypeType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000090348</token>
+            </executionResult>
+            <objectName>Egresado</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="4">
+            <storage>
+                <createTimestamp>2025-04-01T17:22:46.720Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2025-11-17T22:43:57.516Z</requestTimestamp>
+                <requestorRef>
+                    <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                    <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                    <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+                </requestorRef>
+            </process>
+            <provenance>
+                <acquisition id="5">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2025-04-01T17:22:46.708Z</timestamp>
+                </acquisition>
+            </provenance>
+        </_metadata>
+        <identifier>holderType</identifier>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+        <assignmentRelation id="6">
+            <holderType>UserType</holderType>
+        </assignmentRelation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2025-11-17T22:43:57.524Z</enableTimestamp>
+    </activation>
+    <displayName>Egresado</displayName>
+    <identifier>archetype-egresado</identifier>
+    <archetypePolicy>
+        <display>
+            <label>Egresado</label>
+            <pluralLabel>Egresados</pluralLabel>
+            <tooltip>Arquetipo para egresados UPeU</tooltip>
+            <icon>
+                <cssClass>fa fa-user-check</cssClass>
+                <color>#9c27b0</color>
+            </icon>
+        </display>
+        <objectTemplateRef oid="00000000-0000-0000-0000-000000000380" relation="org:default" type="c:ObjectTemplateType"/>
+    </archetypePolicy>
+</archetype>

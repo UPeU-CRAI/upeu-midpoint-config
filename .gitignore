@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # midPoint Studio / Maven
 target/
 *.log
@@ -10,3 +11,10 @@ target/
 
 # Sensitive files (precautionary)
 credentials.properties
+=======
+/target/
+*.kdbx
+*.log
+.idea/
+*.iml
+>>>>>>> 8819382 (Respaldo inicial: Esquema v2.2 y Recursos de Lamb, Koha y Azure)

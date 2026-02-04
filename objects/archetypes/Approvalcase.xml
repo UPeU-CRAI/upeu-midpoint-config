@@ -1,0 +1,126 @@
+<archetype xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="00000000-0000-0000-0000-000000000342" version="1" >
+    <_metadata id="5">
+        <storage>
+            <createTimestamp>2025-04-01T17:22:40.973Z</createTimestamp>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+        </storage>
+        <process>
+            <requestTimestamp>2025-04-01T17:22:40.956Z</requestTimestamp>
+        </process>
+    </_metadata>
+    <name>Approval case</name>
+    <description>
+        Archetype for approval cases, e.g. role assignment approval.
+    </description>
+    <operationExecution id="8">
+        <recordType>simple</recordType>
+        <timestamp>2025-04-01T17:22:41.008Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>add</t:changeType>
+                <t:objectType>c:ArchetypeType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000000045</token>
+            </executionResult>
+            <objectName>Approval case</objectName>
+        </operation>
+        <status>success</status>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+    </operationExecution>
+    <assignment id="1">
+        <_metadata id="6">
+            <storage>
+                <createTimestamp>2025-04-01T17:22:40.973Z</createTimestamp>
+                <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</createChannel>
+            </storage>
+            <process>
+                <requestTimestamp>2025-04-01T17:22:40.956Z</requestTimestamp>
+            </process>
+            <provenance>
+                <acquisition id="7">
+                    <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#init</channel>
+                    <timestamp>2025-04-01T17:22:40.955Z</timestamp>
+                </acquisition>
+            </provenance>
+        </_metadata>
+        <identifier>holderType</identifier>
+        <activation>
+            <effectiveStatus>enabled</effectiveStatus>
+        </activation>
+        <assignmentRelation id="2">
+            <holderType>CaseType</holderType>
+        </assignmentRelation>
+    </assignment>
+    <iteration>0</iteration>
+    <iterationToken/>
+    <activation>
+        <effectiveStatus>enabled</effectiveStatus>
+        <enableTimestamp>2025-04-01T17:22:40.960Z</enableTimestamp>
+    </activation>
+    <archetypePolicy>
+        <display>
+            <label>
+                <t:orig>Approval case</t:orig>
+                <t:norm>approval case</t:norm>
+                <t:translation>
+                    <t:key>approvalCase.label</t:key>
+                </t:translation>
+            </label>
+            <pluralLabel>
+                <t:orig>Approval cases</t:orig>
+                <t:norm>approval cases</t:norm>
+                <t:translation>
+                    <t:key>approvalCase.pluralLabel</t:key>
+                </t:translation>
+            </pluralLabel>
+            <icon>
+                <cssClass>fe fe-approver-object</cssClass>
+                <color>#001f3f</color>
+            </icon>
+        </display>
+        <adminGuiConfiguration>
+            <objectDetails>
+                <panel id="3">
+                    <identifier>caseWorkItems</identifier>
+                    <display>
+                        <label>
+                            <t:orig>Workitems</t:orig>
+                            <t:norm>workitems</t:norm>
+                            <t:translation>
+                                <t:key>Workitems.panel.title</t:key>
+                            </t:translation>
+                        </label>
+                        <icon>
+                            <cssClass>fa fa-circle-o</cssClass>
+                        </icon>
+                    </display>
+                    <panelType>caseWorkItems</panelType>
+                    <type>c:CaseType</type>
+                </panel>
+                <panel id="4">
+                    <identifier>approvalCase</identifier>
+                    <display>
+                        <label>
+                            <t:orig>Approvals</t:orig>
+                            <t:norm>approvals</t:norm>
+                            <t:translation>
+                                <t:key>Approvals.case.panel</t:key>
+                            </t:translation>
+                        </label>
+                        <icon>
+                            <cssClass>fa fa-circle-o</cssClass>
+                        </icon>
+                    </display>
+                    <displayOrder>1</displayOrder>
+                    <panelType>approvalCase</panelType>
+                    <type>c:CaseType</type>
+                    <default>true</default>
+                </panel>
+            </objectDetails>
+        </adminGuiConfiguration>
+    </archetypePolicy>
+</archetype>
