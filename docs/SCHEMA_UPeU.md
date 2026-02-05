@@ -36,6 +36,7 @@ Esta sección define la "casa" o contrato principal del usuario.
 
 | Elemento | Etiqueta | Tipo | Descripción | Ejemplo |
 | :--- | :--- | :--- | :--- | :--- |
+| `campus` | **Sede / Campus** | `string` | Campus físico de estudio o trabajo. | `Lima`, `Juliaca` |
 | `primaryAffiliationCode`| **Siglas Afiliación** | `string` | Código corto indexado para lógica de grupos. | `FIA`, `CRAI` |
 | `primaryAffiliationName`| **Nombre Afiliación** | `string` | Nombre oficial completo de la facultad o área. | `Facultad de Ingeniería...` |
 | `languageSkills` | **Idiomas** | `string` | Idiomas dominados por el usuario. | `Español, Inglés` |
