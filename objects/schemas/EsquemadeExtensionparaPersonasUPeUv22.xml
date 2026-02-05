@@ -1,30 +1,4 @@
-<schema xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b7d55017-599f-4f2f-9493-9f64bba62c5b" version="88" >
-    <_metadata id="1">
-        <storage>
-            <createTimestamp>2025-06-06T16:59:14.972Z</createTimestamp>
-            <creatorRef>
-                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
-                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
-                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
-            </creatorRef>
-            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
-            <modifyTimestamp>2026-02-05T15:29:18.202Z</modifyTimestamp>
-            <modifierRef>
-                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
-                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
-                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
-            </modifierRef>
-            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
-        </storage>
-        <process>
-            <requestTimestamp>2025-06-06T16:59:14.933Z</requestTimestamp>
-            <requestorRef>
-                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
-                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
-                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
-            </requestorRef>
-        </process>
-    </_metadata>
+<schema xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b7d55017-599f-4f2f-9493-9f64bba62c5b" version="90" >
     <name>Esquema de Extensión para Personas UPeU v2.2</name>
     <description>Extensión minimalista para información demográfica, contacto adicional,
       fechas laborales, afiliación, estatus académico, identidad federada
@@ -99,7 +73,7 @@
     <iteration>0</iteration>
     <iterationToken/>
     <definition>
-        <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:tns="urn:upeu:midpoint:person" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:upeu:midpoint:person">
+        <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:tns="urn:upeu:midpoint:person" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="urn:upeu:midpoint:person" xml:space="preserve">
             <xsd:import namespace="http://prism.evolveum.com/xml/ns/public/annotation-3"/>
             <xsd:complexType name="DemographicsType">
                 <xsd:annotation>
@@ -179,36 +153,34 @@
             </xsd:complexType>
             <xsd:complexType name="AffiliationDataType">
                 <xsd:annotation>
-                    <xsd:documentation>Acreditación misionera e idiomas (afiliaciones institucionales vía Org).</xsd:documentation>
+                    <xsd:documentation>Afiliación institucional primaria y habilidades.</xsd:documentation>
                     <xsd:appinfo>
                         <a:extension ref="c:UserType"/>
                     </xsd:appinfo>
                 </xsd:annotation>
                 <xsd:sequence>
+                    <xsd:element minOccurs="0" name="primaryAffiliationCode" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <a:displayName>Siglas Afiliación Primaria</a:displayName>
+                                <a:displayOrder>410</a:displayOrder>
+                                <a:indexed>true</a:indexed>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="primaryAffiliationName" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <a:displayName>Nombre Afiliación Primaria</a:displayName>
+                                <a:displayOrder>411</a:displayOrder>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
                     <xsd:element minOccurs="0" name="languageSkills" type="xsd:string">
                         <xsd:annotation>
                             <xsd:appinfo>
                                 <a:displayName>Idiomas Dominados</a:displayName>
                                 <a:displayOrder>420</a:displayOrder>
-                                <a:indexed>false</a:indexed>
-                            </xsd:appinfo>
-                        </xsd:annotation>
-                    </xsd:element>
-                    <xsd:element minOccurs="0" name="primaryAffiliation" type="xsd:string">
-                        <xsd:annotation>
-                            <xsd:appinfo>
-                                <a:displayName>Facultad o Área Principal</a:displayName>
-                                <a:displayOrder>410</a:displayOrder>
-                                <a:indexed>false</a:indexed>
-                            </xsd:appinfo>
-                        </xsd:annotation>
-                    </xsd:element>
-                    <xsd:element minOccurs="0" name="academicProgram" type="xsd:string">
-                        <xsd:annotation>
-                            <xsd:appinfo>
-                                <a:displayName>Programa Académico / Carrera</a:displayName>
-                                <a:displayOrder>515</a:displayOrder>
-                                <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>
@@ -216,7 +188,7 @@
             </xsd:complexType>
             <xsd:complexType name="AcademicStatusType">
                 <xsd:annotation>
-                    <xsd:documentation>Estado académico (estructura académica vía Org: Facultad/Programa).</xsd:documentation>
+                    <xsd:documentation>Estado académico y detalles del programa de estudio.</xsd:documentation>
                     <xsd:appinfo>
                         <a:extension ref="c:UserType"/>
                     </xsd:appinfo>
@@ -227,7 +199,23 @@
                             <xsd:appinfo>
                                 <a:displayName>Ciclo Académico</a:displayName>
                                 <a:displayOrder>510</a:displayOrder>
-                                <a:indexed>false</a:indexed>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="academicProgram" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <a:displayName>Nombre del Programa Académico</a:displayName>
+                                <a:displayOrder>515</a:displayOrder>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="academicProgramCode" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <a:displayName>Código Programa (Siglas)</a:displayName>
+                                <a:displayOrder>516</a:displayOrder>
+                                <a:indexed>true</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>
@@ -236,7 +224,6 @@
                             <xsd:appinfo>
                                 <a:displayName>Estado de Egreso</a:displayName>
                                 <a:displayOrder>520</a:displayOrder>
-                                <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>

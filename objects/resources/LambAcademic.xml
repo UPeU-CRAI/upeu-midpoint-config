@@ -1,26 +1,17 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b8a1256b-9dd4-4479-9d0a-1de376d23d3a" version="47" >
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b8a1256b-9dd4-4479-9d0a-1de376d23d3a" version="52" >
+    <_metadata id="72">
+        <storage>
+            <modifyTimestamp>2026-02-05T15:43:38.677Z</modifyTimestamp>
+            <modifierRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </modifierRef>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+    </_metadata>
     <name>Lamb Academic</name>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="65">
-        <recordType>simple</recordType>
-        <timestamp>2025-06-10T21:55:49.707Z</timestamp>
-        <operation>
-            <objectDelta>
-                <t:changeType>modify</t:changeType>
-                <t:objectType>c:ResourceType</t:objectType>
-            </objectDelta>
-            <executionResult>
-                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                <status>success</status>
-                <importance>normal</importance>
-                <token>1000000000000195420</token>
-            </executionResult>
-            <objectName>Lamb Academic</objectName>
-        </operation>
-        <status>success</status>
-        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-    </operationExecution>
     <operationExecution id="67">
         <recordType>simple</recordType>
         <timestamp>2025-06-11T22:06:26.998Z</timestamp>
@@ -101,6 +92,26 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
+    <operationExecution id="73">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-05T15:43:38.718Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000773197</token>
+            </executionResult>
+            <objectName>Lamb Academic</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
     <iteration>0</iteration>
     <iterationToken/>
     <operationalState>
@@ -144,8 +155,8 @@
     </connectorConfiguration>
     <schema>
         <cachingMetadata>
-            <retrievalTimestamp>2025-06-09T21:51:00.415Z</retrievalTimestamp>
-            <serialNumber>8f9aeb8327cc56d0-35481c5967cca0f9</serialNumber>
+            <retrievalTimestamp>2026-02-05T15:43:38.742Z</retrievalTimestamp>
+            <serialNumber>9c3641e395b7d3be-3d4db98c76cd10fb</serialNumber>
         </cachingMetadata>
         <generationConstraints>
             <generateObjectClass>ri:AccountObjectClass</generateObjectClass>
@@ -512,16 +523,6 @@
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="34">
-                <ref>ri:primaryaffiliation</ref>
-                <inbound id="61">
-                    <name>primaryAffiliation</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>extension/primaryAffiliation</path>
-                    </target>
-                </inbound>
-            </attribute>
             <attribute id="49">
                 <ref>ri:activationstatus</ref>
                 <inbound id="50">
@@ -597,6 +598,46 @@ switch (dbStatus) {
                     <strength>strong</strength>
                     <target>
                         <path>extension/secondaryMail</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="102">
+                <ref>ri:academicprogrammename</ref>
+                <inbound id="103">
+                    <name>academicProgramName</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/academicProgram</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="104">
+                <ref>ri:academicprogrammeshortname</ref>
+                <inbound id="105">
+                    <name>academicProgramCode</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/academicProgramCode</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="34">
+                <ref>ri:primaryaffiliation</ref>
+                <inbound id="106">
+                    <name>primaryAffiliationName</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/primaryAffiliationName</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="100">
+                <ref>ri:facultyshortname</ref>
+                <inbound id="107">
+                    <name>primaryAffiliationCode</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/primaryAffiliationCode</path>
                     </target>
                 </inbound>
             </attribute>
