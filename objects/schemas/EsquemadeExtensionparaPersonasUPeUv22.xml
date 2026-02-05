@@ -1,4 +1,15 @@
-<schema xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b7d55017-599f-4f2f-9493-9f64bba62c5b" version="90" >
+<schema xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b7d55017-599f-4f2f-9493-9f64bba62c5b" version="94" >
+    <_metadata id="32">
+        <storage>
+            <modifyTimestamp>2026-02-05T16:30:54.156Z</modifyTimestamp>
+            <modifierRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </modifierRef>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
+        </storage>
+    </_metadata>
     <name>Esquema de Extensión para Personas UPeU v2.2</name>
     <description>Extensión minimalista para información demográfica, contacto adicional,
       fechas laborales, afiliación, estatus académico, identidad federada
@@ -70,6 +81,26 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
+    <operationExecution id="33">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-05T16:30:55.760Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:SchemaType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000000781038</token>
+            </executionResult>
+            <objectName>Esquema de Extensión para Personas UPeU v2.2</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
     <iteration>0</iteration>
     <iterationToken/>
     <definition>
@@ -83,7 +114,7 @@
                     </xsd:appinfo>
                 </xsd:annotation>
                 <xsd:sequence>
-                    <xsd:element minOccurs="0" name="birthDate" type="xsd:date">
+                    <xsd:element minOccurs="0" name="birthDate" type="xsd:string">
                         <xsd:annotation>
                             <xsd:appinfo>
                                 <a:displayName>Fecha de Nacimiento</a:displayName>
@@ -173,6 +204,7 @@
                             <xsd:appinfo>
                                 <a:displayName>Nombre Afiliación Primaria</a:displayName>
                                 <a:displayOrder>411</a:displayOrder>
+                                <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>
@@ -181,6 +213,16 @@
                             <xsd:appinfo>
                                 <a:displayName>Idiomas Dominados</a:displayName>
                                 <a:displayOrder>420</a:displayOrder>
+                                <a:indexed>false</a:indexed>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="campus" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <a:displayName>Sede / Campus</a:displayName>
+                                <a:displayOrder>405</a:displayOrder>
+                                <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>
@@ -199,6 +241,7 @@
                             <xsd:appinfo>
                                 <a:displayName>Ciclo Académico</a:displayName>
                                 <a:displayOrder>510</a:displayOrder>
+                                <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>
@@ -207,6 +250,7 @@
                             <xsd:appinfo>
                                 <a:displayName>Nombre del Programa Académico</a:displayName>
                                 <a:displayOrder>515</a:displayOrder>
+                                <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>
@@ -224,6 +268,7 @@
                             <xsd:appinfo>
                                 <a:displayName>Estado de Egreso</a:displayName>
                                 <a:displayOrder>520</a:displayOrder>
+                                <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
                     </xsd:element>

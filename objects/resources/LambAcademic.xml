@@ -1,7 +1,7 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b8a1256b-9dd4-4479-9d0a-1de376d23d3a" version="52" >
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b8a1256b-9dd4-4479-9d0a-1de376d23d3a" version="84" >
     <_metadata id="72">
         <storage>
-            <modifyTimestamp>2026-02-05T15:43:38.677Z</modifyTimestamp>
+            <modifyTimestamp>2026-02-05T17:18:34.041Z</modifyTimestamp>
             <modifierRef>
                 <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
                 <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
@@ -9,12 +9,13 @@
             </modifierRef>
             <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
         </storage>
+        <process/>
     </_metadata>
     <name>Lamb Academic</name>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="67">
+    <operationExecution id="112">
         <recordType>simple</recordType>
-        <timestamp>2025-06-11T22:06:26.998Z</timestamp>
+        <timestamp>2026-02-05T16:46:55.248Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -24,7 +25,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000236774</token>
+                <token>1000000000000786568</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -32,9 +33,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="68">
+    <operationExecution id="113">
         <recordType>simple</recordType>
-        <timestamp>2025-06-11T22:30:50.570Z</timestamp>
+        <timestamp>2026-02-05T16:52:14.223Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -44,7 +45,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000249064</token>
+                <token>1000000000000788783</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -52,9 +53,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="70">
+    <operationExecution id="114">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T13:48:21.630Z</timestamp>
+        <timestamp>2026-02-05T16:56:00.711Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -64,7 +65,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000755416</token>
+                <token>1000000000000790187</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -72,9 +73,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="71">
+    <operationExecution id="115">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T14:00:34.693Z</timestamp>
+        <timestamp>2026-02-05T17:01:12.654Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -84,7 +85,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000756777</token>
+                <token>1000000000000792901</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -92,9 +93,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="73">
+    <operationExecution id="116">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T15:43:38.718Z</timestamp>
+        <timestamp>2026-02-05T17:18:34.064Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -104,7 +105,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000773197</token>
+                <token>1000000000000796244</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -155,14 +156,14 @@
     </connectorConfiguration>
     <schema>
         <cachingMetadata>
-            <retrievalTimestamp>2026-02-05T15:43:38.742Z</retrievalTimestamp>
-            <serialNumber>9c3641e395b7d3be-3d4db98c76cd10fb</serialNumber>
+            <retrievalTimestamp>2026-02-05T17:18:34.079Z</retrievalTimestamp>
+            <serialNumber>8e94af6c8aae73ca-d2839e7c05b03cf8</serialNumber>
         </cachingMetadata>
         <generationConstraints>
             <generateObjectClass>ri:AccountObjectClass</generateObjectClass>
         </generationConstraints>
         <definition>
-            <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:ra="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xml:space="preserve">
+            <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:ra="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3">
                 <xsd:import namespace="http://prism.evolveum.com/xml/ns/public/annotation-3"/>
                 <xsd:import namespace="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3"/>
                 <xsd:import namespace="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3"/>
