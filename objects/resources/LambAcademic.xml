@@ -1,7 +1,14 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b8a1256b-9dd4-4479-9d0a-1de376d23d3a" version="84" >
-    <_metadata id="72">
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="e44293b6-0d8c-4e6e-b12f-8f69323a4a21" version="41" >
+    <_metadata id="1">
         <storage>
-            <modifyTimestamp>2026-02-05T17:18:34.041Z</modifyTimestamp>
+            <createTimestamp>2026-02-05T22:17:13.229Z</createTimestamp>
+            <creatorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </creatorRef>
+            <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            <modifyTimestamp>2026-02-06T14:48:37.511Z</modifyTimestamp>
             <modifierRef>
                 <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
                 <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
@@ -9,13 +16,20 @@
             </modifierRef>
             <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
         </storage>
-        <process/>
+        <process>
+            <requestTimestamp>2026-02-05T22:17:13.199Z</requestTimestamp>
+            <requestorRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </requestorRef>
+        </process>
     </_metadata>
     <name>Lamb Academic</name>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="112">
+    <operationExecution id="57">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T16:46:55.248Z</timestamp>
+        <timestamp>2026-02-06T13:50:23.593Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -25,7 +39,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000786568</token>
+                <token>1000000000000933462</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -33,9 +47,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="113">
+    <operationExecution id="64">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T16:52:14.223Z</timestamp>
+        <timestamp>2026-02-06T14:25:29.752Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -45,7 +59,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000788783</token>
+                <token>1000000000000942219</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -53,9 +67,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="114">
+    <operationExecution id="73">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T16:56:00.711Z</timestamp>
+        <timestamp>2026-02-06T14:35:48.159Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -65,7 +79,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000790187</token>
+                <token>1000000000000945612</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -73,9 +87,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="115">
+    <operationExecution id="76">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T17:01:12.654Z</timestamp>
+        <timestamp>2026-02-06T14:42:12.224Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -85,7 +99,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000792901</token>
+                <token>1000000000000952028</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -93,9 +107,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="116">
+    <operationExecution id="77">
         <recordType>simple</recordType>
-        <timestamp>2026-02-05T17:18:34.064Z</timestamp>
+        <timestamp>2026-02-06T14:48:37.564Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -105,7 +119,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000796244</token>
+                <token>1000000000000957317</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -118,13 +132,13 @@
     <operationalState>
         <lastAvailabilityStatus>up</lastAvailabilityStatus>
         <message>Status set to UP because resource schema was successfully fetched</message>
-        <timestamp>2025-06-09T21:51:00.415Z</timestamp>
+        <timestamp>2026-02-05T22:17:13.286Z</timestamp>
         <nodeId>DefaultNode</nodeId>
     </operationalState>
     <operationalStateHistory id="4">
         <lastAvailabilityStatus>up</lastAvailabilityStatus>
         <message>Status set to UP because resource schema was successfully fetched</message>
-        <timestamp>2025-06-09T21:51:00.415Z</timestamp>
+        <timestamp>2026-02-05T22:17:13.286Z</timestamp>
         <nodeId>DefaultNode</nodeId>
     </operationalStateHistory>
     <connectorRef oid="6e7a6acc-10a5-4366-b176-fcbc6d47cfcb" relation="org:default" type="c:ConnectorType"/>
@@ -142,7 +156,7 @@
                         <t:keyName>cgAFZ2vLxMtjPNGqklrW1M4RRII=</t:keyName>
                     </t:keyInfo>
                     <t:cipherData>
-                        <t:cipherValue>zx7s18CqBUv5WnJTZd2WvNXy7T4i1tCKHlEC8VQe+9Y=</t:cipherValue>
+                        <t:cipherValue>ZBkM6grJzLftU/ciMJmTpL8l538tgJ634s5co7nu/vg=</t:cipherValue>
                     </t:cipherData>
                 </t:encryptedData>
             </cfg:password>
@@ -156,8 +170,8 @@
     </connectorConfiguration>
     <schema>
         <cachingMetadata>
-            <retrievalTimestamp>2026-02-05T17:18:34.079Z</retrievalTimestamp>
-            <serialNumber>8e94af6c8aae73ca-d2839e7c05b03cf8</serialNumber>
+            <retrievalTimestamp>2026-02-06T13:50:23.611Z</retrievalTimestamp>
+            <serialNumber>7807fd43f4c70896-13ad538e1e9bbc73</serialNumber>
         </cachingMetadata>
         <generationConstraints>
             <generateObjectClass>ri:AccountObjectClass</generateObjectClass>
@@ -355,19 +369,10 @@
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
-                        <xsd:element minOccurs="0" name="primaryaffiliation" type="xsd:string">
-                            <xsd:annotation>
-                                <xsd:appinfo>
-                                    <a:displayOrder>300</a:displayOrder>
-                                    <ra:frameworkAttributeName>primaryaffiliation</ra:frameworkAttributeName>
-                                    <ra:returnedByDefault>true</ra:returnedByDefault>
-                                </xsd:appinfo>
-                            </xsd:annotation>
-                        </xsd:element>
                         <xsd:element minOccurs="0" name="dateofbirth" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>310</a:displayOrder>
+                                    <a:displayOrder>300</a:displayOrder>
                                     <ra:frameworkAttributeName>dateofbirth</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
                                 </xsd:appinfo>
@@ -376,8 +381,17 @@
                         <xsd:element minOccurs="0" name="sede" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>320</a:displayOrder>
+                                    <a:displayOrder>310</a:displayOrder>
                                     <ra:frameworkAttributeName>sede</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="user_type" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>320</a:displayOrder>
+                                    <ra:frameworkAttributeName>user_type</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -426,7 +440,8 @@
     <schemaHandling>
         <objectType id="5">
             <kind>account</kind>
-            <displayName>Usuarios Lamb Academic</displayName>
+            <displayName>DB PostgreSQL estudiantes</displayName>
+            <description>Object Type de los estudiantes de la DB PostgreSQL</description>
             <delineation>
                 <objectClass>ri:AccountObjectClass</objectClass>
             </delineation>
@@ -434,116 +449,163 @@
                 <type>c:UserType</type>
                 <archetypeRef oid="00000000-0000-0000-0000-000000000702" relation="org:default" type="c:ArchetypeType"/>
             </focus>
-            <attribute id="16">
+            <attribute id="19">
                 <ref>icfs:uid</ref>
-                <inbound id="17">
-                    <name>name</name>
+                <inbound id="20">
+                    <name>usernameMapping</name>
                     <strength>strong</strength>
                     <target>
                         <path>name</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="18">
+            <attribute id="21">
                 <ref>ri:givenname</ref>
-                <inbound id="19">
-                    <name>givenName</name>
+                <inbound id="22">
+                    <name>givenNameMapping</name>
                     <strength>strong</strength>
                     <target>
                         <path>givenName</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="20">
+            <attribute id="23">
                 <ref>ri:surname</ref>
-                <inbound id="21">
-                    <name>familyName</name>
+                <inbound id="24">
+                    <name>familyNameMapping</name>
                     <strength>strong</strength>
                     <target>
                         <path>familyName</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="22">
+            <attribute id="25">
                 <ref>ri:email</ref>
-                <inbound id="23">
-                    <name>emailAddress</name>
+                <inbound id="26">
+                    <name>emailMapping</name>
                     <strength>strong</strength>
                     <target>
                         <path>emailAddress</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="24">
-                <ref>ri:empno</ref>
-                <inbound id="47">
-                    <name>personalNumber</name>
+            <attribute id="27">
+                <ref>ri:email2</ref>
+                <inbound id="28">
+                    <name>secondaryEmailMapping</name>
                     <strength>strong</strength>
                     <target>
-                        <path>personalNumber</path>
-                    </target>
-                </inbound>
-            </attribute>
-            <attribute id="26">
-                <ref>ri:cardnumber</ref>
-                <inbound id="27">
-                    <name>Código Universitario (Minedu)</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>extension/universityIdCard</path>
-                    </target>
-                </inbound>
-            </attribute>
-            <attribute id="28">
-                <ref>ri:dateofbirth</ref>
-                <inbound id="29">
-                    <name>birthDate</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>extension/birthDate</path>
+                        <path>extension/secondaryMail</path>
                     </target>
                 </inbound>
             </attribute>
             <attribute id="30">
-                <ref>ri:gender</ref>
+                <ref>ri:user_type</ref>
                 <inbound id="31">
-                    <name>gender</name>
+                    <name>roleMapping</name>
                     <strength>strong</strength>
                     <target>
-                        <path>extension/gender</path>
+                        <path>extension/employeeType</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="32">
+            <attribute id="35">
+                <ref>ri:facultyshortname</ref>
+                <inbound id="36">
+                    <name>facultyMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/primaryAffiliationCode</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="37">
                 <ref>ri:sede</ref>
-                <inbound id="66">
-                    <name>campus</name>
+                <inbound id="38">
+                    <name>campusMapping</name>
                     <strength>strong</strength>
                     <target>
                         <path>extension/campus</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="49">
+            <attribute id="40">
+                <ref>ri:cardnumber</ref>
+                <inbound id="41">
+                    <name>universityIdMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/universityIdCard</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="42">
+                <ref>ri:orcid</ref>
+                <inbound id="43">
+                    <name>orcidMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/orcid</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="44">
+                <ref>ri:mobile</ref>
+                <inbound id="45">
+                    <name>mobileMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>telephoneNumber</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="46">
+                <ref>ri:dateofbirth</ref>
+                <inbound id="47">
+                    <name>birthDateMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/birthDate</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="48">
                 <ref>ri:activationstatus</ref>
-                <inbound id="50">
-                    <name>administrativeStatus</name>
+                <inbound id="49">
+                    <name>statusMapping</name>
                     <strength>strong</strength>
                     <expression>
                         <script>
-                            <code>import com.evolveum.midpoint.xml.ns._public.common.common_3.ActivationStatusType;
+                            <code>import com.evolveum.midpoint.xml.ns._public.common.common_3.ActivationStatusType
 
-def dbStatus = input?.toLowerCase();
+// 1. Limpiamos la entrada
+def dbStatus = input?.toString()?.trim()?.toLowerCase()
 
+// 2. CASO VACÍO: Si la base de datos envía NULL o vacío...
+// Devolvemos null para que midPoint vaya a mirar la FECHA (Valid To)
+if (!dbStatus || dbStatus == 'null') {
+    return null 
+}
+
+// 3. CASO MAESTRO: Si hay valor, el estado manda (la fecha se ignora)
 switch (dbStatus) {
     case 'enabled':
-        return ActivationStatusType.ENABLED;
+    case 'active':
+        // Interruptor ON: Activo aunque la fecha haya vencido
+        return ActivationStatusType.ENABLED 
+
     case 'disabled':
-        return ActivationStatusType.DISABLED;
+    case 'inactive':
+        // Interruptor OFF: Bloqueado aunque la fecha sea válida
+        return ActivationStatusType.DISABLED
+
     case 'archived':
-        return ActivationStatusType.ARCHIVED;
+        return ActivationStatusType.ARCHIVED
+
     default:
-        return null; // Devuelve null para casos no reconocidos
+        // Si llega un texto raro que no entendemos, devolvemos null
+        // para que la fecha decida (comportamiento de seguridad)
+        return null
 }</code>
                         </script>
                     </expression>
@@ -555,116 +617,134 @@ switch (dbStatus) {
             <attribute id="51">
                 <ref>ri:contractexpirydate</ref>
                 <inbound id="52">
-                    <name>validTo</name>
+                    <name>contractExpiryMapping</name>
                     <strength>strong</strength>
                     <target>
                         <path>activation/validTo</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="53">
-                <ref>ri:mobile</ref>
-                <inbound id="54">
-                    <name>telephoneNumber</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>telephoneNumber</path>
-                    </target>
-                </inbound>
-            </attribute>
-            <attribute id="55">
-                <ref>ri:cityofresidence</ref>
-                <inbound id="56">
-                    <name>locality</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>locality</path>
-                    </target>
-                </inbound>
-            </attribute>
-            <attribute id="57">
-                <ref>ri:orcid</ref>
-                <inbound id="58">
-                    <name>orcid</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>extension/orcid</path>
-                    </target>
-                </inbound>
-            </attribute>
-            <attribute id="63">
-                <ref>ri:email2</ref>
-                <inbound id="64">
-                    <name>secondaryMail</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>extension/secondaryMail</path>
-                    </target>
-                </inbound>
-            </attribute>
-            <attribute id="102">
-                <ref>ri:academicprogrammename</ref>
-                <inbound id="103">
-                    <name>academicProgramName</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>extension/academicProgram</path>
-                    </target>
-                </inbound>
-            </attribute>
-            <attribute id="104">
+            <attribute id="58">
                 <ref>ri:academicprogrammeshortname</ref>
-                <inbound id="105">
-                    <name>academicProgramCode</name>
+                <inbound id="59">
+                    <name>academicProgramCodeMapping</name>
                     <strength>strong</strength>
                     <target>
                         <path>extension/academicProgramCode</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="34">
-                <ref>ri:primaryaffiliation</ref>
-                <inbound id="106">
-                    <name>primaryAffiliationName</name>
+            <attribute id="60">
+                <ref>ri:academicprogrammename</ref>
+                <inbound id="61">
+                    <name>academicProgramMapping</name>
                     <strength>strong</strength>
                     <target>
-                        <path>extension/primaryAffiliationName</path>
+                        <path>extension/academicProgram</path>
                     </target>
                 </inbound>
             </attribute>
-            <attribute id="100">
-                <ref>ri:facultyshortname</ref>
-                <inbound id="107">
-                    <name>primaryAffiliationCode</name>
+            <attribute id="62">
+                <ref>ri:modalidad_estudio</ref>
+                <inbound id="63">
+                    <name>studyModalityMapping</name>
                     <strength>strong</strength>
                     <target>
-                        <path>extension/primaryAffiliationCode</path>
+                        <path>extension/studyModality</path>
                     </target>
                 </inbound>
             </attribute>
+            <attribute id="65">
+                <ref>ri:cityofresidence</ref>
+                <inbound id="66">
+                    <name>localityMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>locality</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="67">
+                <ref>ri:empno</ref>
+                <inbound id="68">
+                    <name>employeeNumberMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>personalNumber</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="69">
+                <ref>ri:gender</ref>
+                <inbound id="70">
+                    <name>genderMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/gender</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="71">
+                <ref>ri:countryofresidence</ref>
+                <inbound id="72">
+                    <name>countryMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/country</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="74">
+                <ref>ri:provinceofresidence</ref>
+                <inbound id="75">
+                    <name>provinceMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/province</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <correlation>
+                <correlators>
+                    <items id="16">
+                        <enabled>true</enabled>
+                        <item id="17">
+                            <ref>name</ref>
+                        </item>
+                    </items>
+                </correlators>
+            </correlation>
             <synchronization>
                 <reaction id="7">
-                    <situation>unmatched</situation>
+                    <situation>linked</situation>
                     <actions>
-                        <addFocus id="8"/>
+                        <synchronize id="8">
+                            <synchronize>true</synchronize>
+                        </synchronize>
                     </actions>
                 </reaction>
                 <reaction id="9">
-                    <situation>linked</situation>
+                    <situation>deleted</situation>
                     <actions>
-                        <synchronize id="10"/>
+                        <deleteFocus id="10">
+                            <synchronize>true</synchronize>
+                        </deleteFocus>
                     </actions>
                 </reaction>
                 <reaction id="11">
-                    <situation>deleted</situation>
+                    <situation>unlinked</situation>
                     <actions>
-                        <deleteFocus id="12"/>
+                        <link id="12">
+                            <synchronize>true</synchronize>
+                        </link>
                     </actions>
                 </reaction>
                 <reaction id="13">
-                    <situation>unlinked</situation>
+                    <situation>unmatched</situation>
                     <actions>
-                        <link id="14"/>
+                        <addFocus id="14">
+                            <synchronize>true</synchronize>
+                        </addFocus>
                     </actions>
                 </reaction>
             </synchronization>
@@ -672,8 +752,8 @@ switch (dbStatus) {
     </schemaHandling>
     <capabilities>
         <cachingMetadata>
-            <retrievalTimestamp>2025-06-09T21:51:00.406Z</retrievalTimestamp>
-            <serialNumber>7c61f2363b3ff3a1-270775062ea17a42</serialNumber>
+            <retrievalTimestamp>2026-02-05T22:17:13.279Z</retrievalTimestamp>
+            <serialNumber>3e84aef50c717afa-5ce48280b472b14a</serialNumber>
         </cachingMetadata>
         <native xmlns:cap="http://midpoint.evolveum.com/xml/ns/public/resource/capabilities-3">
             <cap:schema/>
