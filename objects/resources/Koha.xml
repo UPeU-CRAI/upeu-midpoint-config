@@ -1,4 +1,4 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="63e8f5cc-4275-4526-88b8-57e76881eb08" version="53" >
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="63e8f5cc-4275-4526-88b8-57e76881eb08" version="65" >
     <_metadata id="1">
         <storage>
             <createTimestamp>2025-07-24T00:08:33.525Z</createTimestamp>
@@ -8,7 +8,7 @@
                 <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
             </creatorRef>
             <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
-            <modifyTimestamp>2026-02-10T13:28:54.778Z</modifyTimestamp>
+            <modifyTimestamp>2026-02-10T15:53:23.934Z</modifyTimestamp>
             <modifierRef>
                 <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
                 <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
@@ -27,9 +27,9 @@
     </_metadata>
     <name>Koha</name>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="51">
+    <operationExecution id="58">
         <recordType>simple</recordType>
-        <timestamp>2026-02-09T22:49:25.588Z</timestamp>
+        <timestamp>2026-02-10T15:02:59.283Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -39,7 +39,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000001083615</token>
+                <token>1000000000001118586</token>
             </executionResult>
             <objectName>Koha</objectName>
         </operation>
@@ -47,9 +47,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="53">
+    <operationExecution id="59">
         <recordType>simple</recordType>
-        <timestamp>2026-02-09T23:18:00.432Z</timestamp>
+        <timestamp>2026-02-10T15:06:21.506Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -59,7 +59,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000001087621</token>
+                <token>1000000000001120020</token>
             </executionResult>
             <objectName>Koha</objectName>
         </operation>
@@ -67,9 +67,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="54">
+    <operationExecution id="60">
         <recordType>simple</recordType>
-        <timestamp>2026-02-10T13:01:44.269Z</timestamp>
+        <timestamp>2026-02-10T15:18:01.528Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -79,7 +79,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000001099611</token>
+                <token>1000000000001122570</token>
             </executionResult>
             <objectName>Koha</objectName>
         </operation>
@@ -87,9 +87,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="55">
+    <operationExecution id="61">
         <recordType>simple</recordType>
-        <timestamp>2026-02-10T13:22:22.838Z</timestamp>
+        <timestamp>2026-02-10T15:32:47.532Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -99,7 +99,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000001108176</token>
+                <token>1000000000001126968</token>
             </executionResult>
             <objectName>Koha</objectName>
         </operation>
@@ -107,9 +107,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="56">
+    <operationExecution id="62">
         <recordType>simple</recordType>
-        <timestamp>2026-02-10T13:28:54.824Z</timestamp>
+        <timestamp>2026-02-10T15:53:23.977Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -119,7 +119,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000001110165</token>
+                <token>1000000000001130282</token>
             </executionResult>
             <objectName>Koha</objectName>
         </operation>

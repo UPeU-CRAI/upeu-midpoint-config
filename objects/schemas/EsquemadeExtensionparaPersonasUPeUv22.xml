@@ -1,7 +1,7 @@
-<schema xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b7d55017-599f-4f2f-9493-9f64bba62c5b" version="102" >
+<schema xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="b7d55017-599f-4f2f-9493-9f64bba62c5b" version="104" >
     <_metadata id="32">
         <storage>
-            <modifyTimestamp>2026-02-06T14:40:31.086Z</modifyTimestamp>
+            <modifyTimestamp>2026-02-09T21:17:16.332Z</modifyTimestamp>
             <modifierRef>
                 <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
                 <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
@@ -22,26 +22,6 @@
       • Compatible con sincronización desde sistemas externos (ERP/RRHH).
   </description>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="33">
-        <recordType>simple</recordType>
-        <timestamp>2026-02-05T16:30:55.760Z</timestamp>
-        <operation>
-            <objectDelta>
-                <t:changeType>modify</t:changeType>
-                <t:objectType>c:SchemaType</t:objectType>
-            </objectDelta>
-            <executionResult>
-                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                <status>success</status>
-                <importance>normal</importance>
-                <token>1000000000000781038</token>
-            </executionResult>
-            <objectName>Esquema de Extensión para Personas UPeU v2.2</objectName>
-        </operation>
-        <status>success</status>
-        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-    </operationExecution>
     <operationExecution id="34">
         <recordType>simple</recordType>
         <timestamp>2026-02-05T23:01:55.548Z</timestamp>
@@ -122,6 +102,26 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
+    <operationExecution id="38">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-09T21:17:18.257Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:SchemaType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001046232</token>
+            </executionResult>
+            <objectName>Esquema de Extensión para Personas UPeU v2.2</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
     <iteration>0</iteration>
     <iterationToken/>
     <definition>
@@ -168,6 +168,14 @@
                         <xsd:annotation>
                             <xsd:appinfo>
                                 <a:displayName>Provincia de Residencia</a:displayName>
+                                <a:indexed>false</a:indexed>
+                            </xsd:appinfo>
+                        </xsd:annotation>
+                    </xsd:element>
+                    <xsd:element minOccurs="0" name="streetAddress" type="xsd:string">
+                        <xsd:annotation>
+                            <xsd:appinfo>
+                                <a:displayName>Dirección</a:displayName>
                                 <a:indexed>false</a:indexed>
                             </xsd:appinfo>
                         </xsd:annotation>
