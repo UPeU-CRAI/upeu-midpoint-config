@@ -1,4 +1,4 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="e44293b6-0d8c-4e6e-b12f-8f69323a4a21" version="41" >
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="e44293b6-0d8c-4e6e-b12f-8f69323a4a21" version="43" >
     <_metadata id="1">
         <storage>
             <createTimestamp>2026-02-05T22:17:13.229Z</createTimestamp>
@@ -8,7 +8,7 @@
                 <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
             </creatorRef>
             <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
-            <modifyTimestamp>2026-02-06T14:48:37.511Z</modifyTimestamp>
+            <modifyTimestamp>2026-02-09T21:23:37.712Z</modifyTimestamp>
             <modifierRef>
                 <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
                 <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
@@ -27,26 +27,6 @@
     </_metadata>
     <name>Lamb Academic</name>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="57">
-        <recordType>simple</recordType>
-        <timestamp>2026-02-06T13:50:23.593Z</timestamp>
-        <operation>
-            <objectDelta>
-                <t:changeType>modify</t:changeType>
-                <t:objectType>c:ResourceType</t:objectType>
-            </objectDelta>
-            <executionResult>
-                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                <status>success</status>
-                <importance>normal</importance>
-                <token>1000000000000933462</token>
-            </executionResult>
-            <objectName>Lamb Academic</objectName>
-        </operation>
-        <status>success</status>
-        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-    </operationExecution>
     <operationExecution id="64">
         <recordType>simple</recordType>
         <timestamp>2026-02-06T14:25:29.752Z</timestamp>
@@ -120,6 +100,26 @@
                 <status>success</status>
                 <importance>normal</importance>
                 <token>1000000000000957317</token>
+            </executionResult>
+            <objectName>Lamb Academic</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="80">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-09T21:23:37.771Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001050983</token>
             </executionResult>
             <objectName>Lamb Academic</objectName>
         </operation>
@@ -701,6 +701,16 @@ switch (dbStatus) {
                     <strength>strong</strength>
                     <target>
                         <path>extension/province</path>
+                    </target>
+                </inbound>
+            </attribute>
+            <attribute id="78">
+                <ref>ri:postaladdress</ref>
+                <inbound id="79">
+                    <name>addressMapping</name>
+                    <strength>strong</strength>
+                    <target>
+                        <path>extension/streetAddress</path>
                     </target>
                 </inbound>
             </attribute>

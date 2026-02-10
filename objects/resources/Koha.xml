@@ -1,4 +1,4 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="63e8f5cc-4275-4526-88b8-57e76881eb08" version="2" >
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="63e8f5cc-4275-4526-88b8-57e76881eb08" version="53" >
     <_metadata id="1">
         <storage>
             <createTimestamp>2025-07-24T00:08:33.525Z</createTimestamp>
@@ -8,6 +8,13 @@
                 <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
             </creatorRef>
             <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
+            <modifyTimestamp>2026-02-10T13:28:54.778Z</modifyTimestamp>
+            <modifierRef>
+                <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
+                <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
+                <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
+            </modifierRef>
+            <modifyChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</modifyChannel>
         </storage>
         <process>
             <requestTimestamp>2025-07-24T00:08:33.484Z</requestTimestamp>
@@ -20,19 +27,99 @@
     </_metadata>
     <name>Koha</name>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="2">
+    <operationExecution id="51">
         <recordType>simple</recordType>
-        <timestamp>2025-07-24T00:08:33.544Z</timestamp>
+        <timestamp>2026-02-09T22:49:25.588Z</timestamp>
         <operation>
             <objectDelta>
-                <t:changeType>add</t:changeType>
+                <t:changeType>modify</t:changeType>
                 <t:objectType>c:ResourceType</t:objectType>
             </objectDelta>
             <executionResult>
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000002519</token>
+                <token>1000000000001083615</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="53">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-09T23:18:00.432Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001087621</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="54">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-10T13:01:44.269Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001099611</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="55">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-10T13:22:22.838Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001108176</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="56">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-10T13:28:54.824Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001110165</token>
             </executionResult>
             <objectName>Koha</objectName>
         </operation>
@@ -78,8 +165,8 @@
     </connectorConfiguration>
     <schema>
         <cachingMetadata>
-            <retrievalTimestamp>2025-07-24T00:08:33.600Z</retrievalTimestamp>
-            <serialNumber>7307ae719beb52d4-6a3322f3bf55c464</serialNumber>
+            <retrievalTimestamp>2026-02-06T16:45:23.626Z</retrievalTimestamp>
+            <serialNumber>72df048b224ff512-7b1fb8c8b18a5b2b</serialNumber>
         </cachingMetadata>
         <generationConstraints>
             <generateObjectClass>ri:AccountObjectClass</generateObjectClass>
@@ -437,6 +524,234 @@
             </xsd:schema>
         </definition>
     </schema>
+    <schemaHandling>
+        <objectType id="6">
+            <kind>account</kind>
+            <displayName>Koha Account</displayName>
+            <default>true</default>
+            <delineation>
+                <objectClass>ri:AccountObjectClass</objectClass>
+            </delineation>
+            <focus>
+                <type>c:UserType</type>
+                <archetypeRef oid="00000000-0000-0000-0000-000000000702" relation="org:default" type="c:ArchetypeType"/>
+            </focus>
+            <attribute id="17">
+                <ref>ri:userid</ref>
+                <outbound>
+                    <name>useridMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>emailAddress</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="18">
+                <ref>ri:cardnumber</ref>
+                <outbound>
+                    <name>cardnumberMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/universityIdCard</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="19">
+                <ref>ri:library_id</ref>
+                <outbound>
+                    <name>libraryIdMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/campus</path>
+                    </source>
+                    <expression>
+                        <script>
+                            <code>// 1. Protección: Si no viene ningún dato (null o variable no definida), usar default
+if (!binding.hasVariable('input') || input == null) {
+    return 'BUL' 
+}
+
+// 2. Lógica normal
+def sede = input.toString() // Convertimos a texto por seguridad
+
+if (sede == 'Lima') {
+    return 'BUL'
+} else if (sede == 'Juliaca') {
+    return 'BUJ'
+} else if (sede == 'Tarapoto') {
+    return 'BUT'
+} else {
+    return 'BUL' // Si viene una sede desconocida, enviamos a Lima
+}</code>
+                        </script>
+                    </expression>
+                </outbound>
+            </attribute>
+            <attribute id="21">
+                <ref>ri:firstname</ref>
+                <outbound>
+                    <name>firstnameMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>givenName</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="22">
+                <ref>ri:surname</ref>
+                <outbound>
+                    <name>surnameMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>familyName</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="23">
+                <ref>ri:city</ref>
+                <outbound>
+                    <name>cityMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>locality</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="25">
+                <ref>ri:email</ref>
+                <outbound>
+                    <name>email1Mapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>emailAddress</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="27">
+                <ref>ri:gender</ref>
+                <outbound>
+                    <name>genderMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/gender</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="29">
+                <ref>ri:category_id</ref>
+                <outbound>
+                    <name>categoryMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/employeeType</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="33">
+                <ref>ri:date_of_birth</ref>
+                <outbound>
+                    <name>birthMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/birthDate</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="35">
+                <ref>ri:address</ref>
+                <outbound>
+                    <name>addressMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/streetAddress</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="37">
+                <ref>ri:country</ref>
+                <outbound>
+                    <name>countryMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/country</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="39">
+                <ref>ri:mobile</ref>
+            </attribute>
+            <attribute id="41">
+                <ref>ri:phone</ref>
+                <outbound>
+                    <name>phoneMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>telephoneNumber</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="46">
+                <ref>ri:state</ref>
+                <outbound>
+                    <name>provinceMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/province</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="48">
+                <ref>ri:date_enrolled</ref>
+            </attribute>
+            <attribute id="50">
+                <ref>ri:expiry_date</ref>
+                <outbound>
+                    <name>dateEnrolledMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>activation/validTo</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="52">
+                <ref>ri:restricted</ref>
+            </attribute>
+            <synchronization>
+                <reaction id="8">
+                    <situation>linked</situation>
+                    <actions>
+                        <synchronize id="9">
+                            <synchronize>true</synchronize>
+                        </synchronize>
+                    </actions>
+                </reaction>
+                <reaction id="10">
+                    <situation>deleted</situation>
+                    <actions>
+                        <deleteFocus id="11">
+                            <synchronize>true</synchronize>
+                        </deleteFocus>
+                    </actions>
+                </reaction>
+                <reaction id="12">
+                    <situation>unlinked</situation>
+                    <actions>
+                        <link id="13">
+                            <synchronize>true</synchronize>
+                        </link>
+                    </actions>
+                </reaction>
+                <reaction id="14">
+                    <situation>unmatched</situation>
+                    <actions>
+                        <addFocus id="15">
+                            <synchronize>true</synchronize>
+                        </addFocus>
+                    </actions>
+                </reaction>
+            </synchronization>
+        </objectType>
+    </schemaHandling>
     <capabilities>
         <cachingMetadata>
             <retrievalTimestamp>2025-07-24T00:08:33.587Z</retrievalTimestamp>
