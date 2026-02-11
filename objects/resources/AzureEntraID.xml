@@ -1,4 +1,4 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="6927a3ed-8842-4a42-8594-39a48aa97585" version="12" >
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="6927a3ed-8842-4a42-8594-39a48aa97585" version="43" >
     <_metadata id="1">
         <storage>
             <createTimestamp>2025-04-25T17:33:32.013Z</createTimestamp>
@@ -8,7 +8,7 @@
                 <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
             </creatorRef>
             <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#objectImport</createChannel>
-            <modifyTimestamp>2025-05-12T14:24:59.500Z</modifyTimestamp>
+            <modifyTimestamp>2026-02-10T21:09:40.258Z</modifyTimestamp>
             <modifierRef>
                 <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
                 <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
@@ -26,9 +26,9 @@
         </process>
     </_metadata>
     <name>Azure EntraID</name>
-    <operationExecution id="23">
+    <operationExecution id="52">
         <recordType>simple</recordType>
-        <timestamp>2025-05-12T14:11:20.749Z</timestamp>
+        <timestamp>2026-02-10T20:50:55.352Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -38,7 +38,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000298727</token>
+                <token>1000000000001162478</token>
             </executionResult>
             <objectName>Azure EntraID</objectName>
         </operation>
@@ -46,9 +46,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="29">
+    <operationExecution id="54">
         <recordType>simple</recordType>
-        <timestamp>2025-05-12T14:17:49.581Z</timestamp>
+        <timestamp>2026-02-10T20:53:17.483Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -58,7 +58,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000300741</token>
+                <token>1000000000001165962</token>
             </executionResult>
             <objectName>Azure EntraID</objectName>
         </operation>
@@ -66,9 +66,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="32">
+    <operationExecution id="55">
         <recordType>simple</recordType>
-        <timestamp>2025-05-12T14:22:43.967Z</timestamp>
+        <timestamp>2026-02-10T21:05:54.998Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -78,7 +78,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000303850</token>
+                <token>1000000000001175147</token>
             </executionResult>
             <objectName>Azure EntraID</objectName>
         </operation>
@@ -86,9 +86,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="33">
+    <operationExecution id="56">
         <recordType>simple</recordType>
-        <timestamp>2025-05-12T14:24:36.345Z</timestamp>
+        <timestamp>2026-02-10T21:07:58.642Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -98,7 +98,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000307424</token>
+                <token>1000000000001176119</token>
             </executionResult>
             <objectName>Azure EntraID</objectName>
         </operation>
@@ -106,9 +106,9 @@
         <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
         <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
     </operationExecution>
-    <operationExecution id="35">
+    <operationExecution id="58">
         <recordType>simple</recordType>
-        <timestamp>2025-05-12T14:24:59.567Z</timestamp>
+        <timestamp>2026-02-10T21:09:40.325Z</timestamp>
         <operation>
             <objectDelta>
                 <t:changeType>modify</t:changeType>
@@ -118,7 +118,7 @@
                 <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
                 <status>success</status>
                 <importance>normal</importance>
-                <token>1000000000000308190</token>
+                <token>1000000000001177351</token>
             </executionResult>
             <objectName>Azure EntraID</objectName>
         </operation>
@@ -171,8 +171,8 @@
     </connectorConfiguration>
     <schema>
         <cachingMetadata>
-            <retrievalTimestamp>2025-04-25T17:33:42.009Z</retrievalTimestamp>
-            <serialNumber>ac52655999e63c8a-b47b48d14e671792</serialNumber>
+            <retrievalTimestamp>2026-02-10T20:48:17.871Z</retrievalTimestamp>
+            <serialNumber>dbcfe26a4cd5fb31-c6aff6fd5eef3e02</serialNumber>
         </cachingMetadata>
         <definition>
             <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:ra="http://midpoint.evolveum.com/xml/ns/public/resource/annotation-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3">
@@ -1615,13 +1615,6 @@
                         </script>
                     </expression>
                 </outbound>
-                <inbound id="24">
-                    <name>name principal</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>name</path>
-                    </target>
-                </inbound>
             </attribute>
             <attribute id="4">
                 <ref>ri:userPrincipalName</ref>
@@ -1646,13 +1639,6 @@
                         </script>
                     </expression>
                 </outbound>
-                <inbound id="25">
-                    <name>email</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>emailAddress</path>
-                    </target>
-                </inbound>
             </attribute>
             <attribute id="5">
                 <ref>ri:givenName</ref>
@@ -1662,13 +1648,6 @@
                         <path>$user/givenName</path>
                     </source>
                 </outbound>
-                <inbound id="26">
-                    <name>nombre de usuario</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>givenName</path>
-                    </target>
-                </inbound>
             </attribute>
             <attribute id="6">
                 <ref>ri:surname</ref>
@@ -1678,13 +1657,6 @@
                         <path>$user/familyName</path>
                     </source>
                 </outbound>
-                <inbound id="27">
-                    <name>apellido de usuario</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>familyName</path>
-                    </target>
-                </inbound>
             </attribute>
             <attribute id="7">
                 <ref>ri:displayName</ref>
@@ -1716,16 +1688,53 @@
                         <path>$focus/nickName</path>
                     </source>
                 </outbound>
-                <inbound id="28">
-                    <name>nickname de email</name>
-                    <strength>strong</strength>
-                    <target>
-                        <path>nickName</path>
-                    </target>
-                </inbound>
             </attribute>
             <attribute id="30">
                 <ref>ri:accountEnabled</ref>
+            </attribute>
+            <attribute id="37">
+                <ref>ri:jobTitle</ref>
+                <outbound>
+                    <name>Cargo / Carrera (Azure)</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/academicProgramCode</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="40">
+                <ref>ri:officeLocation</ref>
+                <outbound>
+                    <name>Campus</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/campus</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="45">
+                <ref>ri:department</ref>
+                <outbound>
+                    <name>Departamento / Facultad (Azure)</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/primaryAffiliationCode</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="47">
+                <ref>ri:passwordProfile.forceChangePasswordNextSignIn</ref>
+                <displayName>Forzar Cambio de Password</displayName>
+            </attribute>
+            <attribute id="57">
+                <ref>ri:mobilePhone</ref>
+                <outbound>
+                    <name>Teléfono móvil</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>telephoneNumber</path>
+                    </source>
+                </outbound>
             </attribute>
             <activation>
                 <administrativeStatus>
@@ -1737,11 +1746,7 @@
                 </administrativeStatus>
             </activation>
             <credentials>
-                <password>
-                    <outbound id="9">
-                        <strength>weak</strength>
-                    </outbound>
-                </password>
+                <password/>
             </credentials>
             <correlation>
                 <correlators>
