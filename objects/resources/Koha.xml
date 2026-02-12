@@ -1,4 +1,4 @@
-<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="63e8f5cc-4275-4526-88b8-57e76881eb08" version="65" >
+<resource xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="63e8f5cc-4275-4526-88b8-57e76881eb08" version="75" >
     <_metadata id="1">
         <storage>
             <createTimestamp>2025-07-24T00:08:33.525Z</createTimestamp>
@@ -8,7 +8,7 @@
                 <t:type xmlns="http://prism.evolveum.com/xml/ns/public/types-3">c:UserType</t:type>
             </creatorRef>
             <createChannel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</createChannel>
-            <modifyTimestamp>2026-02-10T15:53:23.934Z</modifyTimestamp>
+            <modifyTimestamp>2026-02-12T22:03:30.616Z</modifyTimestamp>
             <modifierRef>
                 <t:oid>00000000-0000-0000-0000-000000000002</t:oid>
                 <t:relation xmlns="http://prism.evolveum.com/xml/ns/public/types-3">org:default</t:relation>
@@ -27,86 +27,6 @@
     </_metadata>
     <name>Koha</name>
     <lifecycleState>active</lifecycleState>
-    <operationExecution id="58">
-        <recordType>simple</recordType>
-        <timestamp>2026-02-10T15:02:59.283Z</timestamp>
-        <operation>
-            <objectDelta>
-                <t:changeType>modify</t:changeType>
-                <t:objectType>c:ResourceType</t:objectType>
-            </objectDelta>
-            <executionResult>
-                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                <status>success</status>
-                <importance>normal</importance>
-                <token>1000000000001118586</token>
-            </executionResult>
-            <objectName>Koha</objectName>
-        </operation>
-        <status>success</status>
-        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-    </operationExecution>
-    <operationExecution id="59">
-        <recordType>simple</recordType>
-        <timestamp>2026-02-10T15:06:21.506Z</timestamp>
-        <operation>
-            <objectDelta>
-                <t:changeType>modify</t:changeType>
-                <t:objectType>c:ResourceType</t:objectType>
-            </objectDelta>
-            <executionResult>
-                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                <status>success</status>
-                <importance>normal</importance>
-                <token>1000000000001120020</token>
-            </executionResult>
-            <objectName>Koha</objectName>
-        </operation>
-        <status>success</status>
-        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-    </operationExecution>
-    <operationExecution id="60">
-        <recordType>simple</recordType>
-        <timestamp>2026-02-10T15:18:01.528Z</timestamp>
-        <operation>
-            <objectDelta>
-                <t:changeType>modify</t:changeType>
-                <t:objectType>c:ResourceType</t:objectType>
-            </objectDelta>
-            <executionResult>
-                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                <status>success</status>
-                <importance>normal</importance>
-                <token>1000000000001122570</token>
-            </executionResult>
-            <objectName>Koha</objectName>
-        </operation>
-        <status>success</status>
-        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-    </operationExecution>
-    <operationExecution id="61">
-        <recordType>simple</recordType>
-        <timestamp>2026-02-10T15:32:47.532Z</timestamp>
-        <operation>
-            <objectDelta>
-                <t:changeType>modify</t:changeType>
-                <t:objectType>c:ResourceType</t:objectType>
-            </objectDelta>
-            <executionResult>
-                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
-                <status>success</status>
-                <importance>normal</importance>
-                <token>1000000000001126968</token>
-            </executionResult>
-            <objectName>Koha</objectName>
-        </operation>
-        <status>success</status>
-        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
-        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
-    </operationExecution>
     <operationExecution id="62">
         <recordType>simple</recordType>
         <timestamp>2026-02-10T15:53:23.977Z</timestamp>
@@ -120,6 +40,86 @@
                 <status>success</status>
                 <importance>normal</importance>
                 <token>1000000000001130282</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="63">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-12T21:48:28.906Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001215193</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="64">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-12T21:48:55.627Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001215218</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="65">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-12T21:49:10.962Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001216407</token>
+            </executionResult>
+            <objectName>Koha</objectName>
+        </operation>
+        <status>success</status>
+        <initiatorRef oid="00000000-0000-0000-0000-000000000002" relation="org:default" type="c:UserType"/>
+        <channel>http://midpoint.evolveum.com/xml/ns/public/common/channels-3#user</channel>
+    </operationExecution>
+    <operationExecution id="69">
+        <recordType>simple</recordType>
+        <timestamp>2026-02-12T22:03:30.672Z</timestamp>
+        <operation>
+            <objectDelta>
+                <t:changeType>modify</t:changeType>
+                <t:objectType>c:ResourceType</t:objectType>
+            </objectDelta>
+            <executionResult>
+                <operation>com.evolveum.midpoint.model.impl.lens.ChangeExecutor.executeDelta</operation>
+                <status>success</status>
+                <importance>normal</importance>
+                <token>1000000000001220560</token>
             </executionResult>
             <objectName>Koha</objectName>
         </operation>
@@ -141,7 +141,7 @@
         <timestamp>2025-07-24T00:08:33.600Z</timestamp>
         <nodeId>DefaultNode</nodeId>
     </operationalStateHistory>
-    <connectorRef oid="2369790b-e1d3-40d4-8601-ca06de039b34" relation="org:default" type="c:ConnectorType"/>
+    <connectorRef oid="faca1b0b-4cbb-4a6c-8e06-a7d6889a4a5c" relation="org:default" type="c:ConnectorType"/>
     <connectorConfiguration xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3">
         <icfc:configurationProperties xmlns:cfg="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.identicum.midpoint.connector-koha/com.identicum.connectors.KohaConnector">
             <cfg:serviceAddress xmlns="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.identicum.midpoint.connector-koha/com.identicum.connectors.KohaConnector">http://192.168.15.135:8000</cfg:serviceAddress>
@@ -165,8 +165,8 @@
     </connectorConfiguration>
     <schema>
         <cachingMetadata>
-            <retrievalTimestamp>2026-02-06T16:45:23.626Z</retrievalTimestamp>
-            <serialNumber>72df048b224ff512-7b1fb8c8b18a5b2b</serialNumber>
+            <retrievalTimestamp>2026-02-12T21:49:10.977Z</retrievalTimestamp>
+            <serialNumber>35466b3472244179-8866df91da0ef4a7</serialNumber>
         </cachingMetadata>
         <generationConstraints>
             <generateObjectClass>ri:AccountObjectClass</generateObjectClass>
@@ -201,12 +201,32 @@
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
-                        <xsd:element minOccurs="0" name="patron_card_lost" type="xsd:boolean">
+                        <xsd:element minOccurs="0" name="statistics_2" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
                                     <a:displayOrder>130</a:displayOrder>
+                                    <ra:nativeAttributeName>statistics_2</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>statistics_2</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="patron_card_lost" type="xsd:boolean">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>140</a:displayOrder>
                                     <ra:nativeAttributeName>patron_card_lost</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>patron_card_lost</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="statistics_1" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>150</a:displayOrder>
+                                    <ra:nativeAttributeName>statistics_1</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>statistics_1</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -214,7 +234,7 @@
                         <xsd:element minOccurs="0" name="expired" type="xsd:boolean">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>140</a:displayOrder>
+                                    <a:displayOrder>160</a:displayOrder>
                                     <a:access>read</a:access>
                                     <ra:nativeAttributeName>expired</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>expired</ra:frameworkAttributeName>
@@ -222,10 +242,20 @@
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
+                        <xsd:element maxOccurs="unbounded" minOccurs="0" name="extended_attributes" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>170</a:displayOrder>
+                                    <ra:nativeAttributeName>extended_attributes</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>extended_attributes</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
                         <xsd:element minOccurs="0" name="phone" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>150</a:displayOrder>
+                                    <a:displayOrder>180</a:displayOrder>
                                     <ra:nativeAttributeName>phone</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>phone</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -235,7 +265,7 @@
                         <xsd:element name="library_id" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>160</a:displayOrder>
+                                    <a:displayOrder>190</a:displayOrder>
                                     <ra:nativeAttributeName>library_id</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>library_id</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -245,7 +275,7 @@
                         <xsd:element minOccurs="0" name="state" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>170</a:displayOrder>
+                                    <a:displayOrder>200</a:displayOrder>
                                     <ra:nativeAttributeName>state</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>state</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -255,7 +285,7 @@
                         <xsd:element minOccurs="0" name="firstname" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>180</a:displayOrder>
+                                    <a:displayOrder>210</a:displayOrder>
                                     <ra:nativeAttributeName>firstname</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>firstname</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -265,9 +295,19 @@
                         <xsd:element minOccurs="0" name="email" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>190</a:displayOrder>
+                                    <a:displayOrder>220</a:displayOrder>
                                     <ra:nativeAttributeName>email</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>email</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="lang" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>230</a:displayOrder>
+                                    <ra:nativeAttributeName>lang</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>lang</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -275,7 +315,7 @@
                         <xsd:element minOccurs="0" name="restricted" type="xsd:boolean">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>200</a:displayOrder>
+                                    <a:displayOrder>240</a:displayOrder>
                                     <a:access>read</a:access>
                                     <ra:nativeAttributeName>restricted</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>restricted</ra:frameworkAttributeName>
@@ -286,7 +326,7 @@
                         <xsd:element minOccurs="0" name="updated_on" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>210</a:displayOrder>
+                                    <a:displayOrder>250</a:displayOrder>
                                     <a:access>read</a:access>
                                     <ra:nativeAttributeName>updated_on</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>updated_on</ra:frameworkAttributeName>
@@ -297,7 +337,7 @@
                         <xsd:element minOccurs="0" name="expiry_date" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>220</a:displayOrder>
+                                    <a:displayOrder>260</a:displayOrder>
                                     <ra:nativeAttributeName>expiry_date</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>expiry_date</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -307,7 +347,7 @@
                         <xsd:element minOccurs="0" name="staff_notes" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>230</a:displayOrder>
+                                    <a:displayOrder>270</a:displayOrder>
                                     <ra:nativeAttributeName>staff_notes</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>staff_notes</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -317,7 +357,7 @@
                         <xsd:element minOccurs="0" name="anonymized" type="xsd:boolean">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>240</a:displayOrder>
+                                    <a:displayOrder>280</a:displayOrder>
                                     <a:access>read</a:access>
                                     <ra:nativeAttributeName>anonymized</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>anonymized</ra:frameworkAttributeName>
@@ -328,7 +368,7 @@
                         <xsd:element minOccurs="0" name="date_enrolled" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>250</a:displayOrder>
+                                    <a:displayOrder>290</a:displayOrder>
                                     <a:access>read</a:access>
                                     <ra:nativeAttributeName>date_enrolled</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>date_enrolled</ra:frameworkAttributeName>
@@ -339,7 +379,7 @@
                         <xsd:element minOccurs="0" name="country" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>260</a:displayOrder>
+                                    <a:displayOrder>300</a:displayOrder>
                                     <ra:nativeAttributeName>country</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>country</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -349,7 +389,7 @@
                         <xsd:element name="cardnumber" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>270</a:displayOrder>
+                                    <a:displayOrder>310</a:displayOrder>
                                     <ra:nativeAttributeName>cardnumber</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>cardnumber</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -359,7 +399,7 @@
                         <xsd:element minOccurs="0" name="postal_code" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>280</a:displayOrder>
+                                    <a:displayOrder>320</a:displayOrder>
                                     <ra:nativeAttributeName>postal_code</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>postal_code</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -369,7 +409,7 @@
                         <xsd:element minOccurs="0" name="gender" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>290</a:displayOrder>
+                                    <a:displayOrder>330</a:displayOrder>
                                     <ra:nativeAttributeName>gender</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>gender</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -389,7 +429,7 @@
                         <xsd:element minOccurs="0" name="autorenew_checkouts" type="xsd:boolean">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>300</a:displayOrder>
+                                    <a:displayOrder>340</a:displayOrder>
                                     <ra:nativeAttributeName>autorenew_checkouts</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>autorenew_checkouts</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -399,7 +439,7 @@
                         <xsd:element minOccurs="0" name="protected" type="xsd:boolean">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>310</a:displayOrder>
+                                    <a:displayOrder>350</a:displayOrder>
                                     <ra:nativeAttributeName>protected</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>protected</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -409,9 +449,19 @@
                         <xsd:element minOccurs="0" name="date_of_birth" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>320</a:displayOrder>
+                                    <a:displayOrder>360</a:displayOrder>
                                     <ra:nativeAttributeName>date_of_birth</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>date_of_birth</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="secondary_email" type="xsd:string">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>370</a:displayOrder>
+                                    <ra:nativeAttributeName>secondary_email</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>secondary_email</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -419,7 +469,7 @@
                         <xsd:element minOccurs="0" name="last_seen" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>330</a:displayOrder>
+                                    <a:displayOrder>380</a:displayOrder>
                                     <a:access>read</a:access>
                                     <ra:nativeAttributeName>last_seen</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>last_seen</ra:frameworkAttributeName>
@@ -430,7 +480,7 @@
                         <xsd:element minOccurs="0" name="address2" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>340</a:displayOrder>
+                                    <a:displayOrder>390</a:displayOrder>
                                     <ra:nativeAttributeName>address2</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>address2</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -440,7 +490,7 @@
                         <xsd:element minOccurs="0" name="opac_notes" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>350</a:displayOrder>
+                                    <a:displayOrder>400</a:displayOrder>
                                     <ra:nativeAttributeName>opac_notes</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>opac_notes</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -450,9 +500,19 @@
                         <xsd:element name="surname" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>360</a:displayOrder>
+                                    <a:displayOrder>410</a:displayOrder>
                                     <ra:nativeAttributeName>surname</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>surname</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="privacy" type="xsd:int">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>420</a:displayOrder>
+                                    <ra:nativeAttributeName>privacy</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>privacy</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -460,7 +520,7 @@
                         <xsd:element minOccurs="0" name="city" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>370</a:displayOrder>
+                                    <a:displayOrder>430</a:displayOrder>
                                     <ra:nativeAttributeName>city</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>city</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -470,7 +530,7 @@
                         <xsd:element minOccurs="0" name="address" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>380</a:displayOrder>
+                                    <a:displayOrder>440</a:displayOrder>
                                     <ra:nativeAttributeName>address</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>address</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -480,9 +540,19 @@
                         <xsd:element minOccurs="0" name="incorrect_address" type="xsd:boolean">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>390</a:displayOrder>
+                                    <a:displayOrder>450</a:displayOrder>
                                     <ra:nativeAttributeName>incorrect_address</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>incorrect_address</ra:frameworkAttributeName>
+                                    <ra:returnedByDefault>true</ra:returnedByDefault>
+                                </xsd:appinfo>
+                            </xsd:annotation>
+                        </xsd:element>
+                        <xsd:element minOccurs="0" name="login_attempts" type="xsd:int">
+                            <xsd:annotation>
+                                <xsd:appinfo>
+                                    <a:displayOrder>460</a:displayOrder>
+                                    <ra:nativeAttributeName>login_attempts</ra:nativeAttributeName>
+                                    <ra:frameworkAttributeName>login_attempts</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
                                 </xsd:appinfo>
                             </xsd:annotation>
@@ -490,7 +560,7 @@
                         <xsd:element minOccurs="0" name="date_renewed" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>400</a:displayOrder>
+                                    <a:displayOrder>470</a:displayOrder>
                                     <a:access>read</a:access>
                                     <ra:nativeAttributeName>date_renewed</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>date_renewed</ra:frameworkAttributeName>
@@ -501,7 +571,7 @@
                         <xsd:element minOccurs="0" name="mobile" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayOrder>410</a:displayOrder>
+                                    <a:displayOrder>480</a:displayOrder>
                                     <ra:nativeAttributeName>mobile</ra:nativeAttributeName>
                                     <ra:frameworkAttributeName>mobile</ra:frameworkAttributeName>
                                     <ra:returnedByDefault>true</ra:returnedByDefault>
@@ -715,6 +785,36 @@ if (sede == 'Lima') {
             </attribute>
             <attribute id="52">
                 <ref>ri:restricted</ref>
+            </attribute>
+            <attribute id="66">
+                <ref>ri:secondary_email</ref>
+                <outbound>
+                    <name>email2Mapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/secondaryMail</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="67">
+                <ref>ri:statistics_1</ref>
+                <outbound>
+                    <name>facultadMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/primaryAffiliationCode</path>
+                    </source>
+                </outbound>
+            </attribute>
+            <attribute id="68">
+                <ref>ri:statistics_2</ref>
+                <outbound>
+                    <name>programaMapping</name>
+                    <strength>strong</strength>
+                    <source>
+                        <path>extension/academicProgramCode</path>
+                    </source>
+                </outbound>
             </attribute>
             <synchronization>
                 <reaction id="8">

@@ -1,23 +1,23 @@
-<connector xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="2369790b-e1d3-40d4-8601-ca06de039b34" version="14" >
-    <name>ConnId com.identicum.connectors.KohaConnector v1.0.1</name>
+<connector xmlns="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:c="http://midpoint.evolveum.com/xml/ns/public/common/common-3" xmlns:icfs="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/resource-schema-3" xmlns:org="http://midpoint.evolveum.com/xml/ns/public/common/org-3" xmlns:q="http://prism.evolveum.com/xml/ns/public/query-3" xmlns:ri="http://midpoint.evolveum.com/xml/ns/public/resource/instance-3" xmlns:t="http://prism.evolveum.com/xml/ns/public/types-3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" oid="faca1b0b-4cbb-4a6c-8e06-a7d6889a4a5c" version="0" >
+    <name>ConnId com.identicum.connectors.KohaConnector v1.0.2</name>
     <displayName>KohaConnector</displayName>
     <framework>http://midpoint.evolveum.com/xml/ns/public/connector/icf-1</framework>
     <connectorType>com.identicum.connectors.KohaConnector</connectorType>
-    <connectorVersion>1.0.1</connectorVersion>
+    <connectorVersion>1.0.2</connectorVersion>
     <connectorBundle>com.identicum.midpoint.connector-koha</connectorBundle>
     <namespace>http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.identicum.midpoint.connector-koha/com.identicum.connectors.KohaConnector</namespace>
     <schema>
         <definition>
-            <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3" xmlns:qn679="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.identicum.midpoint.connector-koha/com.identicum.connectors.KohaConnector" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.identicum.midpoint.connector-koha/com.identicum.connectors.KohaConnector">
+            <xsd:schema xmlns:a="http://prism.evolveum.com/xml/ns/public/annotation-3" xmlns:icfc="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3" xmlns:qn796="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3" xmlns:tns="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.identicum.midpoint.connector-koha/com.identicum.connectors.KohaConnector" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/bundle/com.identicum.midpoint.connector-koha/com.identicum.connectors.KohaConnector">
                 <xsd:import namespace="http://midpoint.evolveum.com/xml/ns/public/connector/icf-1/connector-schema-3"/>
                 <xsd:import namespace="http://prism.evolveum.com/xml/ns/public/types-3"/>
                 <xsd:import namespace="http://prism.evolveum.com/xml/ns/public/annotation-3"/>
                 <xsd:complexType name="ConfigurationType">
                     <xsd:sequence>
-                        <xsd:element minOccurs="0" ref="qn679:connectorPoolConfiguration">
+                        <xsd:element minOccurs="0" ref="qn796:connectorPoolConfiguration">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:type>qn679:ConnectorPoolConfigurationType</a:type>
+                                    <a:type>qn796:ConnectorPoolConfigurationType</a:type>
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
@@ -52,9 +52,9 @@
                         <xsd:element name="serviceAddress" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayName>Dirección del servicio</a:displayName>
+                                    <a:displayName>URL base del servicio</a:displayName>
                                     <a:displayOrder>1</a:displayOrder>
-                                    <a:help>URL base de la instancia de Koha. Ejemplo: http://koha.upeu.edu.pe. No incluir la ruta /api/v1. Es un campo obligatorio.</a:help>
+                                    <a:help>URL base de la instancia de Koha (ej. http://koha.upeu.edu.pe). No incluir la ruta /api/v1. Es un campo obligatorio.</a:help>
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
@@ -63,7 +63,7 @@
                                 <xsd:appinfo>
                                     <a:displayName>Confiar en todos los certificados SSL</a:displayName>
                                     <a:displayOrder>2</a:displayOrder>
-                                    <a:help>Marcar solo para entornos de desarrollo. Si es true, el conector no validará los certificados SSL. En producción, debe ser false para requerir un certificado SSL válido y confiable.</a:help>
+                                    <a:help>Habilitar solo para entornos de desarrollo. Si es true, el conector no validará los certificados SSL. En producción, debe ser false.</a:help>
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
@@ -72,14 +72,14 @@
                                 <xsd:appinfo>
                                     <a:displayName>Método de Autenticación</a:displayName>
                                     <a:displayOrder>3</a:displayOrder>
-                                    <a:help>Seleccione el método para conectarse a la API de Koha. Las opciones son BASIC o OAUTH2. Según la opción elegida, deberá completar los campos del grupo correspondiente.</a:help>
+                                    <a:help>Seleccione el método para conectarse a la API de Koha: BASIC o OAUTH2. Según la opción elegida, deberá completar los campos del grupo correspondiente.</a:help>
                                 </xsd:appinfo>
                             </xsd:annotation>
                         </xsd:element>
                         <xsd:element minOccurs="0" name="username" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayName>Usuario (para Autenticación BASIC)</a:displayName>
+                                    <a:displayName>Usuario (Autenticación BASIC)</a:displayName>
                                     <a:displayOrder>4</a:displayOrder>
                                     <a:help>Nombre de usuario de un cliente API de Koha con los permisos necesarios. Requerido si el método de autenticación es BASIC.</a:help>
                                 </xsd:appinfo>
@@ -88,7 +88,7 @@
                         <xsd:element minOccurs="0" name="password" type="t:ProtectedStringType">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayName>Contraseña (para Autenticación BASIC)</a:displayName>
+                                    <a:displayName>Contraseña (Autenticación BASIC)</a:displayName>
                                     <a:displayOrder>5</a:displayOrder>
                                     <a:help>Contraseña asociada al usuario para la autenticación BASIC.</a:help>
                                 </xsd:appinfo>
@@ -97,7 +97,7 @@
                         <xsd:element minOccurs="0" name="clientId" type="xsd:string">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayName>Client ID (para Autenticación OAUTH2)</a:displayName>
+                                    <a:displayName>Client ID (Autenticación OAUTH2)</a:displayName>
                                     <a:displayOrder>6</a:displayOrder>
                                     <a:help>El Client ID generado en Koha para la autenticación OAuth2 (Client Credentials). Requerido si el método de autenticación es OAUTH2.</a:help>
                                 </xsd:appinfo>
@@ -106,7 +106,7 @@
                         <xsd:element minOccurs="0" name="clientSecret" type="t:ProtectedStringType">
                             <xsd:annotation>
                                 <xsd:appinfo>
-                                    <a:displayName>Client Secret (para Autenticación OAUTH2)</a:displayName>
+                                    <a:displayName>Client Secret (Autenticación OAUTH2)</a:displayName>
                                     <a:displayOrder>7</a:displayOrder>
                                     <a:help>El Client Secret asociado al Client ID para la autenticación OAUTH2.</a:help>
                                 </xsd:appinfo>
